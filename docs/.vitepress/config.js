@@ -1,6 +1,9 @@
 export default {
 	title: 'Nightwatch API',
 	description: 'memes',
+	head: [
+		['link', { rel: "shortcut icon", href: "favicon.ico"}],
+	],
 	themeConfig: {
 		logo: '/nightwatch-logo.svg',
 		sidebar: [

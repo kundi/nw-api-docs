@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as a,a as o}from"./app.0bca4e6e.js";const f=JSON.parse('{"title":"Authentication","description":"","frontmatter":{},"headers":[],"relativePath":"authentication/index.md"}'),c={name:"authentication/index.md"},n=o("",5),i=[n];function s(r,h,_,d,p,u){return a(),e("div",null,i)}const g=t(c,[["render",s]]);export{f as __pageData,g as default};
