@@ -1,0 +1,38 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/dist/
+/tmp/
+/~partytown/
+
+# dependencies
+/bower_components/
+/node_modules/
+
+# misc
+/.env
+/.pnp*
+/.sass-cache
+/.eslintcache
+/connect.lock
+/coverage/
+/libpeerconnection.log
+/npm-debug.log*
+/testem.log
+/yarn-error.log
+/ssl
+/workers-site/node_modules
+
+# ember-try
+/.node_modules.ember-try/
+/bower.json.ember-try
+/package.json.ember-try
+
+# IDE
+.idea/
+
+# 3rd party scripts
+/public/rw.js
+/public/fbevents.js
+/public/~partytown/*
+/public/~partytown
