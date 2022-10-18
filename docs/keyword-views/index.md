@@ -154,8 +154,8 @@ While views are intended for saving a particular filter set and then being used 
 possible to use them to filter keywords on the fly.
 
 ```shell
-curl 'https://api.nightwatch.io/api/v1/urls/URL_ID/keywords?access_token=ACCESS_TOKEN \
-  filter_groups=[{"filters":[{"field":"position","condition":"equals","value":"1"}]}]
+curl 'https://api.nightwatch.io/api/v1/urls/URL_ID/keywords?access_token=ACCESS_TOKEN' \
+  -d 'filter_groups=[{"filters":[{"field":"position","condition":"equals","value":"1"}]}]'
 ```
 
 > The above command returns JSON structured like this:
@@ -230,7 +230,7 @@ curl 'https://api.nightwatch.io/api/v1/dynamic_views?access_token=ACCESS_TOKEN&g
 A view is set up in two phases. First we create the view, and then we create the filters.
 
 ```shell
-curl 'https://api.nightwatch.io/api/v1/dynamic_views?access_token=access_token  \
+curl 'https://api.nightwatch.io/api/v1/dynamic_views?access_token=access_token'  \
   -H 'Accept: application/json' \
   -X POST \
   -d '{"dynamic_view":{"name":"Example view","url_group_id":"26738"}}'
@@ -306,7 +306,7 @@ If you have multiple filter groups (AND filters chaining), you have to make mult
 ## List views
 
 ```shell
-curl 'https://api.nightwatch.io/api/v1/dynamic_views?url_id=123&access_token=ACCESS_TOKEN
+curl 'https://api.nightwatch.io/api/v1/dynamic_views?url_id=123&access_token=ACCESS_TOKEN'
 ```
 
 > The above command returns JSON structured like this:
@@ -338,7 +338,7 @@ curl 'https://api.nightwatch.io/api/v1/dynamic_views?url_id=123&access_token=ACC
 ## Get a view
 
 ```shell
-curl 'https://api.nightwatch.io/api/v1/dynamic_views/VIEW_ID?access_token=ACCESS_TOKEN
+curl 'https://api.nightwatch.io/api/v1/dynamic_views/VIEW_ID?access_token=ACCESS_TOKEN'
 ```
 
 > The above command returns JSON structured like this:
