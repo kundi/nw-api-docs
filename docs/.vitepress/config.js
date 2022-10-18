@@ -13,6 +13,7 @@ export default {
 					{ text: 'Authentication', link: '/authentication/' },
 					{ text: 'Sign up for Nightwatch', link: 'https://app.nightwatch.io/signup' },
 					{ text: 'Nightwatch Help Docs', link: 'https://docs.nightwatch.io/en/' },
+					{ text: 'Nightwatch API on Postman', link: 'https://www.postman.com/nightwatch-seo-api/workspace/nightwatch-seo-api/overview' },
 				]
 			},
 			{
