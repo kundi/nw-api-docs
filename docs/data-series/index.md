@@ -15,7 +15,7 @@ and calculate statistics.
 ## URL Series
 
 ```shell
-curl 'https://api.nightwatch.io/api/v1/series?access_token=ACCESS_TOKEN&url_ids%5B%5D=161490&date_from=2019-04-02&date_to=2019-07-01&with_competitors=false'
+curl 'https://api.nightwatch.io/api/v1/series?access_token=ACCESS_TOKEN&url_ids[]=161490&date_from=2019-04-02&date_to=2019-07-01&with_competitors=false'
 ```
 
 > The above command returns JSON structured like this:
@@ -83,7 +83,7 @@ Available URL series:
 ## Keyword series
 
 ```shell
-curl 'https://api.nightwatch.io/api/v1/series?access_token=ACCESS_TOKEN&keyword_ids%5B%5D=1212189&date_from=2019-06-04&date_to=2019-07-04'
+curl 'https://api.nightwatch.io/api/v1/series?access_token=ACCESS_TOKEN&keyword_ids[]=1212189&date_from=2019-06-04&date_to=2019-07-04'
 ```
 
 > The above command returns JSON structured like this:
@@ -140,7 +140,7 @@ Available keyword series:
 ## Keyword view series
 
 ```shell
-curl 'https://api.nightwatch.io/api/v1/series?access_token=ACCESS_TOKEN&dynamic_view_ids%5B%5D=123&date_from=2019-06-04&date_to=2019-07-04'
+curl 'https://api.nightwatch.io/api/v1/series?access_token=ACCESS_TOKEN&dynamic_view_ids[]=123&date_from=2019-06-04&date_to=2019-07-04'
 ```
 
 ```json
@@ -184,7 +184,7 @@ Available keyword series:
 ## Group series
 
 ```shell
-curl 'https://api.nightwatch.io/api/v1/series?access_token=ACCESS_TOKEN&url_group_ids%5B%5D=123&date_from=2019-06-04&date_to=2019-07-04'
+curl 'https://api.nightwatch.io/api/v1/series?access_token=ACCESS_TOKEN&url_group_ids[]=123&date_from=2019-06-04&date_to=2019-07-04'
 ```
 
 ```json
@@ -273,7 +273,7 @@ Available backlink series:
 ## Backlink series (for a view)
 
 ```shell
-curl 'https://api.nightwatch.io/api/v1/series?access_token=ACCESS_TOKEN&backlink_view_ids%5B%5D=123&date_from=2019-04-02&date_to=2019-07-01'
+curl 'https://api.nightwatch.io/api/v1/series?access_token=ACCESS_TOKEN&backlink_view_ids[]=123&date_from=2019-04-02&date_to=2019-07-01'
 ```
 
 ```json
