@@ -2,6 +2,12 @@
 
 This section describes getting SERP data for a specified keyword result.
 
+## Finding the SERP ID
+
+You can copy the SERP ID from the top right corner of the keyword SERP Preview page in the Nightwatch app.  
+
+![SERP ID Location in the app](../public/serp-id-location.png)
+
 ## Get SERP Data
 
 ```shell
