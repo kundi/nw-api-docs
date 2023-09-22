@@ -123,7 +123,7 @@ curl 'https://api.nightwatch.io/api/v1/urls/URL_ID/keywords/batch_create?access_
 
 ### HTTP Request
 
-`POST https://api.nightwatch.io/api/v1/urls/URL_ID/keywords?access_token=ACCESS_TOKEN`
+`POST https://api.nightwatch.io/api/v1/urls/URL_ID/keywords/batch_create?access_token=ACCESS_TOKEN`
 
 ### Parameters
 
