@@ -28,7 +28,6 @@ Available fields:
 | account_access      | Info about the current user account access                                    |
 | keyword_limit       | Keyword limit                                                                 |
 | url_limit           | URL limit                                                                     |
-| backlinks_limit     | Backlinks limit                                                               |
 | timezone            | User's timezone                                                               |
 | whitelabel          | Whether or not the account is whitelabeled                                    |
 | agency              | Whether or not the account is whitelabeled                                    |

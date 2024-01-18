@@ -1,7 +1,6 @@
 # URLs
 
 URLs represent a site or domain for which a set of keywords are being tracked.
-URLs can also contain backlinks, and are used to perform site audits on.
 Althought these two last functionalities have their own endpoint, but their
 specific settings are configured with the URL endpoint.
 
@@ -42,12 +41,7 @@ specific settings are configured with the URL endpoint.
 | google_analytics_profile_id               | Google Analytics profile ID, might be empty if GA integration is not setup                             |
 | country_code                              | ISO3166 alpha-2 country code                                                                           |
 | language_code                             | ISO639 language code                                                                                   |
-| search_console_url                        | Google Search Console URL this URL matches with                                                        |
-| backlinks_enabled                         | Whether backlinks are enabled for this URL                                                             |
-| backlinks_status                          | Backlinks status data (read only)                                                                      |
-| backlinks_count                           | Total number of backlinks                                                                              |
-| google_analytics_updated_at               | Last time GA data was updated                                                                          |
-| backlinks_fetching_enabled                | Whether this URL has recurring backlinks fetching enabled                                              |
+| search_console_url                        | Google Search Console URL this URL matches with                                                        |                                           |
 | include_local_pack_in_main_position       | Whether to include local pack rankings in the main one (boolean, default: true)                        |
 | include_places_image_in_main_position     | Whether to include image carousel rankings in the main one (boolean, default: true)                    |
 | include_featured_snippet_in_main_position | Whether to include feature snippets rankings in the main one (boolean, default: true)                  |
@@ -58,14 +52,9 @@ specific settings are configured with the URL endpoint.
 | match_subdomains                          | Whether to match subdomains (boolean, default: false)                                                  |
 | match_nested_urls                         | Whether to match subpaths in the URL (boolean, default: true)                                          |
 | site_audit_interval                       | Recurring site audit intervals (in seconds, accepted valud are: 604800 (1 week) and 2592000 (30 days)) |
-| backlinks_settings.ignored_domains        | List of domain backlinks from will be ignored                                                          |
-| backlinks_settings.min_url_rating         | Minimum URL rating for backlink domains                                                                |
+domains                                                                |
 | next_site_audit_crawl_at                  | Next time a recurring site audit will happen (read only)                                               |
-| site_audit_interval                       | Recurring site audit intervals (in seconds, accepted valud are: 604800 (1 week) and 2592000 (30 days)) |
-| backlinks_settings.ignored_domains        | List of domain backlinks from will be ignored                                                          |
-| backlinks_settings.min_url_rating         | Minimum URL rating for backlink domains                                                                |
-| seo_metrics                               | Moz, Majestic, and Ahref SEO metrics                                                                   |
-| seo_metrics_changes                       | Last observed changes for Moz, Majestic, and Ahref SEO metrics                                         |
+| site_audit_interval                       | Recurring site audit intervals (in seconds, accepted valud are: 604800 (1 week) and 2592000 (30 days)) |domains                                                                |
 | match_subdomains                          | Whether to match URL subdomains                                                                        |
 | match_nested_urls                         | Whether to match URL subpaths                                                                          |
 
@@ -322,8 +311,6 @@ curl 'https://api.nightwatch.io/api/v1/urls/31234?access_token=ACCESS_TOKEN' \\
 | match_subdomains                          | Whether to match subdomains (boolean, default: false)                                                  |
 | match_nested_urls                         | Whether to match subpaths in the URL (boolean, default: true)                                          |
 | site_audit_interval                       | Recurring site audit intervals (in seconds, accepted valud are: 604800 (1 week) and 2592000 (30 days)) |
-| backlinks_settings.ignored_domains        | List of domain backlinks from will be ignored                                                          |
-| backlinks_settings.min_url_rating         | Minimum URL rating for backlink domains                                                                |
 
 
 

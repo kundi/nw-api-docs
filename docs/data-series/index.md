@@ -6,8 +6,6 @@ Using Nightwatch API, you can retrieve data series for the following resources:
 - Keyword
 - Keyword View
 - Group
-- Backlinks
-- Backlink Views
 
 All series are represented by an array of date-value pairs, which you can use to visualize graphs
 and calculate statistics.
@@ -65,12 +63,6 @@ Available URL series:
 | keyword_distribution    | Distribution of keyword positions in Top 3, Top 10, Top 100, No rank                             |
 | total_keywords          | Number of keywords tracked                                                                       |
 | indexed_pages           | Number of indexed pages on Google                                                                |
-| moz_domain_authority    | Moz's Domain Authority                                                                           |
-| moz_page_authority      | Moz's Page Authority                                                                             |
-| ahrefs_domain_rating    | Ahrefs' Domain Rating                                                                            |
-| ahrefs_rank             | Ahrefs' URL Rank                                                                                 |
-| majestic_trust_flow     | Majestic's Trust Flow                                                                            |
-| majestic_citation_flow  | Majestic's Citation Flow                                                                         |
 | clicks                  | Number of organic search clicks (when Search Console property is connected)                      |
 | impressions             | Number of organic search impressions (when Search Console property is connected)                 |
 | sessions                | Number of Google Analytics Sessions (when Google Analytics property is connected)                |
@@ -223,99 +215,6 @@ Available keyword series:
 | keyword_distribution    | Distribution of keyword positions in Top 3, Top 10, Top 100, No rank                             |
 | total_keywords          | Number of keywords in the group on specified days                                                |
 | up_down                 | Number of keywords whose position increased and decreased                                        |
-
-
-## Backlink series (for a URL)
-
-```shell
-curl 'https://api.nightwatch.io/api/v1/series?access_token=ACCESS_TOKEN&url_id_for_all_backlinks=123&date_from=2019-06-04&date_to=2019-07-04'
-```
-
-```json
-[{
-  backlink_view_series: [
-    {
-      name: "backlinks_total",
-      series:  [["2019-06-04", 10], ...]
-    },
-    {
-      name: "backlinks_referring_ips",
-      series:  [["2019-06-04", 10], ...]
-    }, ...
-  ]
-]
-```
-
-### HTTP Request
-
-`GET https://api.nightwatch.io/api/v1/series?access_token=ACCESS_TOKEN`
-
-| Parameter                 | Description                                                 |
-|---------------------------|-------------------------------------------------------------|
-| url_id_for_all_backlinks* | URL id                                                      |
-| date_from*                | Start date for series in YYYY-MM-DD format (e.g 2019-01-02) |
-| date_to*                  | End date for series in YYYY-MM-DD format (e.g. 2019-04-02)  |
-
-
-Parameters marked with * are mandatory.
-
-Available backlink series:
-
-| Series                      | Description       |
-|-----------------------------|-------------------|
-| backlinks_all               | Active backlinks  |
-| backlinks_total             | Total backlinks   |
-| backlinks_referring_ips     | Referring IPs     |
-| backlinks_referring_domains | Referring Domains |
-| backlinks_referring_subnets | Referring Subnets |
-
-
-## Backlink series (for a view)
-
-```shell
-curl 'https://api.nightwatch.io/api/v1/series?access_token=ACCESS_TOKEN&backlink_view_ids[]=123&date_from=2019-04-02&date_to=2019-07-01'
-```
-
-```json
-[{
-  backlink_view_id: 123,
-  backlink_view_name: "DR > 10"
-  backlink_view_series: [
-    {
-      name: "backlinks_total",
-      series:  [["2019-06-04", 10], ...]
-    },
-    {
-      name: "backlinks_referring_ips",
-      series:  [["2019-06-04", 10], ...]
-    }, ...
-  ]
-]
-```
-
-### HTTP Request
-
-`GET https://api.nightwatch.io/api/v1/series?access_token=ACCESS_TOKEN`
-
-| Parameter          | Description                                                 |
-|--------------------|-------------------------------------------------------------|
-| backlink_view_ids* | Backlink view ids                                           |
-| date_from*         | Start date for series in YYYY-MM-DD format (e.g 2019-01-02) |
-| date_to*           | End date for series in YYYY-MM-DD format (e.g. 2019-04-02)  |
-
-
-Parameters marked with * are mandatory.
-
-Available backlink series:
-
-| Series                      | Description       |
-|-----------------------------|-------------------|
-| backlinks_all               | Active backlinks  |
-| backlinks_total             | Total backlinks   |
-| backlinks_referring_ips     | Referring IPs     |
-| backlinks_referring_domains | Referring Domains |
-| backlinks_referring_subnets | Referring Subnets |
-
 
 
 
