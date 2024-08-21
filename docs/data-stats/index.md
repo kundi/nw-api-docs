@@ -93,7 +93,39 @@ curl 'https://api.nightwatch.io/api/v1/keyword_stats?access_token=ACCESS_TOKEN&s
       ["2019-07-03", 406],
       ["2019-07-04", 317],
       ...
-    ]
+    ],
+    "traffic_values": [
+      ["2019-07-03", 20.68],
+      ["2019-07-04", 19.21],
+      ...
+    ],
+    // using 'include_organic=true'
+    "average_organic_positions": [
+      ["2019-07-03", 14.67],
+      ["2019-07-04", 8.0],
+      ...
+    ],
+    // using 'include_organic=true'
+    "organic_keyword_distribution_series": [
+      [
+        "2019-07-03",
+        {
+          "top_3": 2.0,
+          "top_10": 0.0,
+          "top_100": 1.0,
+          "no_rank": 0.0
+        }
+      ],
+      [
+        "2019-07-04",
+        {
+          "top_3": 0.0,
+          "top_10": 1.0,
+          "top_100": 0.0,
+          "no_rank": 0.0
+        }
+      ],
+      ...
   }
 ```
 
@@ -109,6 +141,7 @@ curl 'https://api.nightwatch.io/api/v1/keyword_stats?access_token=ACCESS_TOKEN&s
 | end_date*       | The ending date in YYYY-MM-DD format (e.g. 2019-01-31)   |
 | url_id          | The URL id to calculate stats for                        |
 | dynamic_view_id | The dynamic view id to calculate stats for               |
+| include_organic | (Optional) Must be true to include organic stats         |
 
 
 It's mandatory to specify either an `url_id` or `dynamic_view_id`.
@@ -144,4 +177,6 @@ Available stats:
 | indexed_pages                  | Latest number of pages indexed by Google                                                                |
 | indexed_pages_change           | The change of number of pages indexed by Google                                                         |
 | indexed_pages_series           | The number of pages indexed by Google time series                                                       |
-
+| traffic_values                 | Latest traffic value ([more info](https://docs.nightwatch.io/en/articles/4874335-all-nightwatch-metrics-definitions))
+| average_organic_positions           | Average organic position time series (_returned only when_ `include_organic=true`) |
+| organic_keyword_distribution_series | Organic keyword distribution time series (_returned only when_ `include_organic=true`) |
