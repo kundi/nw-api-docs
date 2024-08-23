@@ -87,6 +87,27 @@ curl 'https://api.nightwatch.io/api/v1/urls/URL_ID/keywords?access_token=ACCESS_
 | X-Page-Count  | Number of pages for specified page limit |
 | X-Total-Count | Total number of keywords                 |
 
+### Dynamic Columns
+To retrieve additional metrics for keywords, set the parameters below to `true`. By default, these fields are not included in the response.
+
+- `calculate_search_volatility_selected_interval`: Includes the keyword's search volatility and its change.
+- `calculate_click_potential_selected_interval`: Includes the keyword's click potential and its change.
+- `calculate_traffic_value_selected_interval`: Includes the keyword's traffic value and its change.
+
+```json
+[
+  {
+    ...
+    "search_volatility_selected_interval": 42.42,
+    "search_volatility_change": -12.25,
+    "click_potential_selected_interval": 5.0,
+    "click_potential_change": 2.1,
+    "traffic_value_selected_interval": 220.0,
+    "traffic_value_change": 15.0,
+    ...
+  }
+]
+```
 
 ## Add keywords
 
