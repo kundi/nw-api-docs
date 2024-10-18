@@ -4,9 +4,11 @@ This section describes getting SERP data for a specified keyword result.
 
 ## Finding the SERP ID
 
-You can copy the SERP ID from the top right corner of the keyword SERP Preview page in the Nightwatch app.  
+To locate the SERP ID in the Nightwatch app, navigate to the keyword SERP Preview page and find the ID at the top-right corner.
 
 ![SERP ID Location in the app](../public/serp-id-location.png)
+
+You can also retrieve the SERP ID programmatically using the [keyword results endpoint](/keyword-results/). The `id` field in the response corresponds to the SERP ID, which can be used to fetch SERPs.
 
 ## Get SERP Data
 
