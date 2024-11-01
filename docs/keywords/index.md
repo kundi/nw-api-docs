@@ -154,7 +154,7 @@ curl 'https://api.nightwatch.io/api/v1/urls/URL_ID/keywords/batch_create?access_
 | google_hl*          | Search language code (see <a href="https://developers.google.com/custom-search/docs/ref_languages">here</a> for available options)                          |
 | google_gl*          | Search geolocation code (see <a href="https://developers.google.com/custom-search/docs/xml_results_appendices#countryCodes">here</a> for available options) |
 | search_engine*      | Search engine ('google', 'youtube', 'places', 'bing', 'yahoo' or 'duckduckgo')                                                                              |
-| adwords_location_id | Location name from `canonical_name_full` using the [locations endpoint](/locations/). Partial names (e.g., new yo) will be matched to the closest location. |
+| adwords_location_id | Location name from `canonical_name_full` using the [locations endpoint](/locations/). Partial names (e.g. `new yo`) will be matched to the closest location. |
 | mobile              | Search adjusted for mobile devices (true or false, default: false)                                                                                          |
 | desktop             | Search adjusted for desktop devices (true or false, default: true)                                                                                          |
 
