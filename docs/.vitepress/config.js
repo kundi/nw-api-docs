@@ -30,6 +30,7 @@ export default {
 					{ text: 'Data Series ', link: '/data-series/' },
 					{ text: 'Data Stats ', link: '/data-stats/' },
 					{ text: 'SERPs ', link: '/serps/' },
+					{ text: 'Adword Locations ', link: '/locations/' },
 				]
 			}
 		]
