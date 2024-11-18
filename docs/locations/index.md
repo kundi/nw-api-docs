@@ -33,7 +33,8 @@ curl 'https://api.nightwatch.io/api/v1/search_locations?access_token=ACCESS_TOKE
 ### URL Parameters
 Make sure that you are searching for location that is country specified with `gl` parameter. Possible values for `gl` parameter are described [here](https://developers.google.com/custom-search/docs/xml_results_appendices#countryCodes).
 
-| Parameter | Description         |
-|-----------|---------------------|
-|    gl     | Geolocation identifier (ex. `us`, `fr`, `de`) |
-|  search   | String specifying location (ex. `new york`, `texas`, `new y`) |
+| Parameter   | Description                                                    |
+|-------------|----------------------------------------------------------------|
+| gl          | Geolocation identifier (ex. `us`, `fr`, `de`)                  |
+| search      | String specifying location (ex. `new york`, `texas`, `new y`)  |
+| target_type | (Optional) Filter by location type (ex. `city`, `county`, `airport`) |
